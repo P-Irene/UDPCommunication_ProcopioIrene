@@ -1,5 +1,11 @@
 public class MainServer {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Server s = new Server();
+        s.avvio();
+        while(true){
+            s.riceviServer();
+            s.inviaServer();
+        }
     }
+
 }
